@@ -9,6 +9,8 @@ envs:
       value: "6.3.5.GA"
     - name: "PRODUCT_VERSION"
       value: "6.3.5.GA"
+    - name: "TARGET_DATAVIRT_IMAGE_VERSIONS"
+      value: "1.0,1.1,1.2"
 labels:
     - name: "io.k8s.description"
       value: "JDBC Driver for JBoss Data Virtualization"
