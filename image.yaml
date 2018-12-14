@@ -32,9 +32,9 @@ packages:
       install:
           - gettext
 artifacts:
-    - path: teiid-jdbc-8.12.16.6_4-redhat-64-2.jar 
+    - name: teiid-jdbc-8.12.16.6_4-redhat-64-2.jar 
       md5: d10e06edcb8bf06c9d604f475d1a69f4
-    - path: teiid-hibernate-dialect-8.12.16.6_4-redhat-64-2.jar
+    - name: teiid-hibernate-dialect-8.12.16.6_4-redhat-64-2.jar
       md5: 0b510a1594d4b6485ce7c7e7e34c0499
 osbs:
       configuration:
