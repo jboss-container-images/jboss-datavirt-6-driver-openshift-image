@@ -26,6 +26,7 @@ modules:
       install:
           - name: os-datavirt-driver
 packages:
+      content_sets_file: content_sets.yml
       repositories:
           - jboss-os
       install:
@@ -36,6 +37,8 @@ artifacts:
     - path: teiid-hibernate-dialect-8.12.16.6_4-redhat-64-2.jar
       md5: 0b510a1594d4b6485ce7c7e7e34c0499
 osbs:
+      configuration:
+            container_file: container.yaml
       repository:
             name: containers/jboss-datavirt-6
             branch: jb-datavirt-6.4-driver-openshift-rhel-7
