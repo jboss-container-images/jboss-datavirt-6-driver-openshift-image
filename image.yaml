@@ -22,8 +22,13 @@ envs:
       value: "6.4.5.GA"
 modules:
       repositories:
+          - name: cct_module
+            git:
+                url: https://github.com/jboss-openshift/cct_module.git
+                ref: master
           - path: modules
       install:
+          - name: jboss.container.user
           - name: os-datavirt-driver
 packages:
       content_sets_file: content_sets.yml
