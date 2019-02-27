@@ -2,7 +2,7 @@ schema_version: 1
 
 name: "jboss-datavirt-6/datavirt64-driver-openshift"
 description: "Red Hat JBoss Data Virtualization 6.4 driver OpenShift container image"
-version: "1.4"
+version: "1.5"
 from: "rhel7:7-released"
 labels:
     - name: "com.redhat.component"
@@ -17,9 +17,9 @@ envs:
     - name: "JBOSS_PRODUCT"
       value: "datavirt_driver"
     - name: "JBOSS_DATAVIRT_DRIVER_VERSION"
-      value: "6.4.5.GA"
+      value: "6.4.6.GA"
     - name: "PRODUCT_VERSION"
-      value: "6.4.5.GA"
+      value: "6.4.6.GA"
 modules:
       repositories:
           - name: cct_module
@@ -37,10 +37,10 @@ packages:
       install:
           - gettext
 artifacts:
-    - name: teiid-jdbc-8.12.16.6_4-redhat-64-2.jar 
-      md5: d10e06edcb8bf06c9d604f475d1a69f4
-    - name: teiid-hibernate-dialect-8.12.16.6_4-redhat-64-2.jar
-      md5: 0b510a1594d4b6485ce7c7e7e34c0499
+    - name: teiid-jdbc-8.12.17.6_4-redhat-64-2.jar
+      md5: 9dadd7a0d1ea8ec9003eed9a4baffee1
+    - name: teiid-hibernate-dialect-8.12.17.6_4-redhat-64-2.jar
+      md5: d8a0df066fbc21afe9b011ee5b3681f0
 osbs:
       configuration:
             container_file: container.yaml
