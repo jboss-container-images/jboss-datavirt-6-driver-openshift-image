@@ -37,10 +37,10 @@ packages:
       install:
           - gettext
 artifacts:
-    - name: teiid-hibernate-dialect-8.12.18.6_4-redhat-64-1.jar
-      md5: de4669a1845805ccdd7d19be94620ca7
-    - name: teiid-jdbc-8.12.18.6_4-redhat-64-1.jar
-      md5: fd743109bcc33a94e8ca66fa499c3ff4
+    - name: teiid-hibernate-dialect-8.12.18.6_4-redhat-64-3.jar 
+      md5: 5db0bfb9c06b7defa41dace101671f43
+    - name: teiid-jdbc-8.12.18.6_4-redhat-64-3.jar
+      md5: fa5660ee7e31bfac05facebbacb88485
 osbs:
       configuration:
             container_file: container.yaml
